@@ -15,5 +15,26 @@ To quickly set up your node, run this script:
 ```
 wget -O story.sh https://api.denodes.xyz/story.sh && bash story.sh
 ```
+After installation, wait for full synchronization. The command below should return `false`:
+```
+curl -s localhost:26657/status | jq .result.sync_info.catching_up
+```
+### wallet & faucet
 
-## Useful Commands
+Next, proceed to export your validator key
+```
+story validator export
+```
+You can export the derived EVM private key of your validator into the default data config directory:
+```
+story validator export --export-evm-key
+```
+Request test tokens from the [Faucet](https://faucet.story.foundation/) and topup your validator wallet.
+Check your balance [Storyscan](https://odyssey-testnet-explorer.storyscan.xyz/)
+
+### validator creation
+
+```
+source $HOME/.bash_profile
+story validator create --stake 1000000000000000000 --moniker $MONIKER
+```
