@@ -25,6 +25,14 @@ Next, proceed to export your validator key
 ```
 story validator export
 ```
+```
+Compressed Public Key (hex): 03bdc7b8940babe9226d52d7fa299a1faf3d64a82f809889256c8f146958a63984
+Compressed Public Key (base64): A73HuJQLq+kibVLX+imaH689ZKgvgJiJJWyPFGlYpjmE
+Uncompressed Public Key (hex): 04bdc7b8940babe9226d52d7fa299a1faf3d64a82f809889256c8f146958a6398496b9e2af0a3a1d199c3cc1d09ee899336a530c185df6b46a9735b25e79a493af
+EVM Address: 0x9EacBe2C3B1eb0a9FC14106d97bd3A1F89efdDCc
+Validator Address: storyvaloper1p470h0jtph4n5hztallp8vznq8ehylsw9vpddx
+Delegator Address: story1p470h0jtph4n5hztallp8vznq8ehylswtr4vxd
+```
 You can export the derived EVM private key of your validator into the default data config directory:
 ```
 story validator export --export-evm-key
