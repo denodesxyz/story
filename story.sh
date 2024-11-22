@@ -31,7 +31,6 @@ if [ ! $MONIKER ]; then
 fi
 
 echo "export MONIKER=$MONIKER" >> $HOME/.bash_profile
-echo "export WALLET=wallet" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 story init --network odyssey --moniker "$MONIKER"
