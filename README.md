@@ -44,5 +44,23 @@ Check your balance [Storyscan](https://odyssey-testnet-explorer.storyscan.xyz/)
 
 ```
 source $HOME/.bash_profile
-story validator create --stake 1000000000000000000 --moniker $MONIKER
+story validator create --stake 1024000000000000000000 --moniker $MONIKER
+```
+
+## Useful commands
+- View consensus client logs:
+```
+journalctl -fu storyd -o cat
+```
+- Check execution client logs:
+```
+journalctl -fu story-gethd -o cat
+```
+- Restart your node:
+```
+systemctl restart storyd story-gethd
+```
+- Unjail a validator:
+```
+story validator unjail --validator-pubkey ${VALIDATOR_PUB_KEY_IN_HEX}
 ```
