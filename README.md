@@ -47,6 +47,10 @@ source $HOME/.bash_profile
 story validator create --stake 1024000000000000000000 --moniker $MONIKER
 ```
 
+### story validator handbook
+
+For complete guidelines on running a Story node, please refer to our [Story Validator Handbook](https://mirror.xyz/denodes.eth/lZahk7aPl_vdZt8rX_Bku040q_CTdtOfUqxv5MjCmJw).
+
 ## Useful commands
 - View consensus client logs:
 ```
