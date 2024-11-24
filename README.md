@@ -64,3 +64,11 @@ systemctl restart storyd story-gethd
 ```
 story validator unjail --validator-pubkey ${VALIDATOR_PUB_KEY_IN_HEX}
 ```
+- Delete a node
+```
+systemctl stop storyd story-gethd
+systemctl disable storyd story-gethd
+rm /etc/systemd/system/storyd.service
+rm /etc/systemd/system/story-gethd.service
+rm -rf $HOME/.story
+```
